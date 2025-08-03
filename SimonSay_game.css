@@ -1,0 +1,161 @@
+*{
+ 
+  font-family: Poppins;
+  font-weight: 400;
+  font-style: normal;
+
+}
+body{
+    background-color: rgb(12, 0, 15);
+}
+button{
+    height: 200px;
+    width: 200px;
+    border: rgb(125, 123, 123) 4px solid;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    background-color: white;
+
+}
+.btn-container{
+text-shadow: 0px 0px 50px white;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+transform: translateY(30px);
+
+
+}
+.GAME{
+    transform: translateY(80px);
+    text-align: center;
+    width:26%;
+    height: auto;
+    margin: auto auto;
+    box-shadow: 0px 0px 1rem rgb(190, 3, 236);
+    border-radius: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    /* animation: animation1 4s infinite; */
+    border: 2px solid rgb(190, 3, 236) ;
+    transition:all 2s ease;
+  transform: translateY(80px);
+  /* other styles... */
+  opacity: 0; /* <-- add this if not present */
+
+}
+.GAME:hover{
+    transition: 1s;
+    transition-delay: 1s;
+    opacity: 1;
+    transition-duration: 1s;
+    animation: animation1 4s infinite;
+    animation: animationTwo 2s infinite;
+}
+
+button:hover{
+    opacity: 1;
+    transition: 0.1s;
+    animation: animationOne 2s infinite;
+}
+
+@keyframes animation1 {
+  0% {
+    transition: 2s;
+    transition-duration: 2s;
+    box-shadow: 0px 0px 50px rgba(190, 3, 236);
+    
+  }
+  50% {
+    transition: 2s;
+    transition-duration: 2s;
+    box-shadow: 5px 5px 50px rgb(106, 7, 181);
+  }
+  100%{
+     transition: 2s;
+     transition-duration: 2s;
+    box-shadow: 5px 5px 50px rgb(181, 7, 140);
+  }
+}
+  @keyframes animationOne {
+  0% {
+    transition: 2s;
+    transition-duration: 2s;
+    border: 7px solid rgba(190, 3, 236);
+    box-shadow: 0px 0px 20px  rgba(190, 3, 236);
+    
+  }
+  50% {
+    transition: 2s;
+    transition-duration: 2s;
+    border: 7px solid rgb(106, 7, 181);
+    box-shadow: 0px 0px 20px rgb(106, 7, 181);
+}
+  100%{
+     transition: 2s;
+     transition-duration: 2s;
+     border: 7px solid rgb(181, 7, 140);
+     box-shadow: 0px 0px 20px  rgb(181, 7, 140);
+  }
+  }
+    @keyframes animationTwo {
+  0% {
+    transition: 2s;
+    transition-duration: 2s;
+    border: 4px solid rgba(190, 3, 236);
+    /* box-shadow: 0px 0px 20px  rgba(190, 3, 236); */
+    
+  }
+  50% {
+    transition: 2s;
+    transition-duration: 2s;
+    border: 4px solid rgb(106, 7, 181);
+    /* box-shadow: 0px 0px 20px rgb(106, 7, 181); */
+}
+  100%{
+     transition: 2s;
+     transition-duration: 2s;
+     border: 4px solid rgb(181, 7, 140);
+     /* box-shadow: 0px 0px 20px  rgb(181, 7, 140); */
+  }
+}
+  
+/* Entry animation for GAME */
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(80px); /* match your existing GAME Y-position */
+  }
+}
+
+/* Add this to trigger the effect on load */
+.GAME-entry {
+  animation: slideDownFade 2s ease-out forwards;
+}
+
+.colorone{
+  background-color: #ff0000;
+}
+.colortwo{
+  background-color: #48ff00;
+}
+.colorthree{
+  background-color: rgb(255, 255, 0);
+
+}
+
+.colorfour{
+  background-color: rgb(0, 8, 255);
+}
+
+.active{
+  background-color: white;
+}
