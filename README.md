@@ -24,7 +24,7 @@ Test your memory and see how high you can score!
 - JavaScript (DOM manipulation, event handling)
 
 ## 📷 Screenshots
-Simon Say Game ="https://github.com/your-username/Simon-Says-Game/blob/main/Screenshot2025-08-03223346.png"
+Simon Say Game ="https://github.com/awadi99/Simon-Says-Game/blob/main/Screenshot%202025-08-03%20223346.png"
 
 
 ## 🔗 Live Demo
