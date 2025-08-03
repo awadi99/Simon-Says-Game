@@ -30,3 +30,38 @@ Simon Say Game ="https://github.com/awadi99/Simon-Says-Game/blob/main/Screenshot
 ## 🔗 Live Demo
  CodePen / GitHub 
  CodePen ="https://codepen.io/awadi99/pen/OPypdjg"
+
+# Important Point
+
+🚀 How to Run the Simon Says Game
+You can run your Simon Says game project in two easy ways:
+
+✅ 1. Using CodePen (Recommended for Beginners)
+If your project is uploaded on CodePen, follow these steps:
+
+Go to your CodePen project link.
+
+The game will automatically run in the browser.
+
+Press any key to start playing!
+
+💡 No setup needed. Just open and play.
+
+✅ 2. Using Local Files on Your Computer
+If you have the code files (index.html, style.css, script.js) saved on your PC:
+
+🖥️ Steps:
+Make sure all files are in the same folder:
+
+SimonSay_game.html
+
+SimonSay_game.css
+
+SimonSay_game.js
+
+Double-click SimonSay_game.html file
+→ It will open in your default web browser.
+
+Press any key on your keyboard
+→ Start playing the game!
+
