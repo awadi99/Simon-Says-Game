@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scroll Animation Example</title>
+  <style>
+    body {
+      background-color: #0c000f;
+      color: white;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .spacer {
+      height: 100vh;
+    }
+
+    .GAME {
+      width: 60%;
+      margin: 100px auto;
+      padding: 2rem;
+      background-color: black;
+      border: 2px solid rgb(190, 3, 236);
+      border-radius: 1rem;
+      box-shadow: 0 0 1rem rgb(190, 3, 236);
+      text-align: center;
+
+      /* Hidden state */
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+    }
+
+    .GAME.show {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="spacer"></div>
+
+  <div class="GAME">
+    <h1>🚀 Welcome</h1>
+    <p>This slides up and fades in when you scroll here.</p>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="GAME">
+    <h1>🔥 More Content</h1>
+    <p>This also reveals with animation.</p>
+  </div>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { 
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    document.querySelectorAll('.GAME').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
